@@ -1,6 +1,7 @@
+# Licensing
 Unless otherwise noted, the below License applies to all Conglomeration (cgl) related "Repositories" ("Projects", "Libraries") owned by AstolfoDev and/or Mokiy.
 
-# MIT License (<https://astolfodev.mit-license.org/>)
+## MIT License (<https://astolfodev.mit-license.org/>)
 
 Copyright © 2021 AstolfoDev <AstolfoDev@wafflepowered.com>, Mokiy <mokiy@wafflepowered.com>
 
