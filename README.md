@@ -10,7 +10,7 @@ Additionally, Conglomeration allows you to check the (raw text) Size of individu
 \* Our "official" parsers may not support this, although that depends on the parser. For this use-case, we encourage you to implement your own parser based on [the standard](/standard/)<br/><br/>
 
 ## Roadmap
-See [standard/roadmap.md](/standard/roadmap.md)
+See [Standard/Roadmap.md](/Standard/Roadmap.md)
 
 ## Versioning
 Minor and Patch versions may differ from library to library, but for versions >=1.0.0, the Major version of all Libraries indicates the same, or compatible, standard version.
