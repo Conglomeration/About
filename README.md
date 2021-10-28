@@ -1,6 +1,6 @@
 # About Conglomeration
 [conglomeration (noun)](https://www.merriam-webster.com/dictionary/conglomeration)<br/>
-con·​glom·​er·​a·​tion | \ kən-ˌglä-mə-ˈrā-shən, ˌkän- \<br/>
+con·​glom·​er·​a·​tion | \ kən-ˌglä-mə-ˈrā-shən, ˌkän- <br/>
 something conglomerated : a mixed mass or collection
 
 ## What is Conglomeration?
