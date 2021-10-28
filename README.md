@@ -18,4 +18,4 @@ Minor and Patch versions may differ from library to library, but for versions >=
 For <1.0.0, the public API is unstable, aswell as the actual parsing/encoding/etc... of the implementation.
 
 ## License
-See [LICENSE.md](/LICENSE.md)
+See [LICENSE](/LICENSE/)
