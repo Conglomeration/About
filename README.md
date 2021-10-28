@@ -11,9 +11,9 @@ Additionally, Conglomeration allows you to check the (raw text) Size of individu
 
 ## Roadmap
 (Current Version: `0.1.0` | Roadmap is for the standard, not the individual parser libraries)
-### >=1.0.0
+### >=0.2.0
 - Add String Compression
-### >=1.1.0
+### >=0.3.0
 - Add AES256 Encryption
 
 ## Versioning
