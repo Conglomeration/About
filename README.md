@@ -19,4 +19,4 @@ Additionally, Conglomeration allows you to check the (raw text) Size of individu
 ## Versioning
 Minor and Patch versions may differ from library to library, but for versions >=1.0.0, the Major version of all Libraries indicates the same, or compatible, standard version.
 
-For <1.0.0, the API is unstable, aswell as the standard implementation.
+For <1.0.0, the public API is unstable, aswell as the actual parsing/encoding/etc... of the implementation.
