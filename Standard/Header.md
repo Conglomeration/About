@@ -4,6 +4,8 @@
 
 Each Conglomeration (CGL) must start with a simple `FORMAT_VERSION_BEGIN` followed by the format version, followed by `FORMAT_VERSION_END`
 
+Currently, the format version is `STANDARD-0.1.0`
+
 ## Per-Entry
 
 Each kv pair (entry) has a header, which is composed of the following:
