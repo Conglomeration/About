@@ -36,17 +36,17 @@ Encoders may provide an option to encode in a way that takes advantage of this, 
 ## Markers
 
 Here's a list of Header Markers and their corresponding unicode characters:
-| Name | Character | Unicode |
-| ---------------------- | --------- | --- |
-| `HEADER_BEGIN` | `` | [U+0001](https://unicode-table.com/en/0001/) |
-| `DATA_NAME` | `` | [U+0003](https://unicode-table.com/en/0003/) |
-| `DATA_TYPE` | `` | [U+0004](https://unicode-table.com/en/0004/) |
-| `END_HEADER_FIELD` | `` | [U+0007](https://unicode-table.com/en/0007/) |
-| `DATA_LENGTH` | `` | [U+0005](https://unicode-table.com/en/0005/) |
-| `DATA_LAST` | | [U+000B](https://unicode-table.com/en/000B/) |
-| `DATA_BEGIN` | `` | [U+0006](https://unicode-table.com/en/0006/) |
-| `FORMAT_VERSION_BEGIN` | `` | [U+0008](https://unicode-table.com/en/0008/) |
-| `FORMAT_VERSION_END` | | [U+0009](https://unicode-table.com/en/0009/) |
+| Short Name | Name | Character | Unicode |
+| --- | ---------------------- | --------- | --- |
+| `HB` | `HEADER_BEGIN` | `` | [U+0001](https://unicode-table.com/en/0001/) |
+| `DN` <!-- no, not Deez Nuts --> | `DATA_NAME` | `` | [U+0003](https://unicode-table.com/en/0003/) |
+| `DT` | `DATA_TYPE` | `` | [U+0004](https://unicode-table.com/en/0004/) |
+| `EHF` | `END_HEADER_FIELD` | `` | [U+0007](https://unicode-table.com/en/0007/) |
+| `DLEN` | `DATA_LENGTH` | `` | [U+0005](https://unicode-table.com/en/0005/) |
+| `DLA` | `DATA_LAST` | | [U+000B](https://unicode-table.com/en/000B/) |
+| `DB` <!-- Deutsche Bahn, now in a data standard --> | `DATA_BEGIN` | `` | [U+0006](https://unicode-table.com/en/0006/) |
+| `FVB` | `FORMAT_VERSION_BEGIN` | `` | [U+0008](https://unicode-table.com/en/0008/) |
+| `FVE` | `FORMAT_VERSION_END` | | [U+0009](https://unicode-table.com/en/0009/) |
 
 ### JSON Table
 
