@@ -21,7 +21,7 @@ Each kv pair (entry) has a header, which is composed of the following:
 
 ### Parsing Headers
 
-Parsers should ignore headers they don't understand. They can optionally, for returned tables/custom classes, add it as `__UNKNOWN_FIELD_<UPPERCASE_NAME>` to the returned object, however this is not required.<br/>
+Parsers should ignore headers they don't understand. They can optionally, for returned tables/custom classes, add it as `__UNKNOWN_FIELD_<Header>`=`true` to the returned object, however this is not required.<br/>
 Parsers should consider everything until the `DATA_BEGIN` marker to be the header.<br/>
 Parsers should consider exactly `DATA_LENGTH` Bytes after `DATA_BEGIN` to be the body. No more, No less.
 
