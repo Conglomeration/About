@@ -12,10 +12,12 @@ Each kv pair (entry) has a header, which is composed of the following:
 
 - A `HEADER_BEGIN` marker, indicating that the header begins
 - A `DATA_NAME` marker, followed by **base-64 encoded** the name of the chunk (aka the Key in the k,v pair)
-- A `DATA_TYPE` marker, followed by the type of the chunk (such as `string`, `vector3`) - Parsers must treat this case-insensitively<br/>This is used to determine how to parse the data.<br/>This **must** be followed by a `END_HEADER_FIELD` marker, indicating that this is is the end of the `DATA_TYPE` marker.<br/>This field **cannot** contain the `END_HEADER_FIELD` marker within it\'s contents.<br/>Parsers should read up to said `END_HEADER_FIELD` marker.
+- A `DATA_TYPE` marker, followed by the type of the chunk (such as `string`, `vector3`) - Parsers must treat this case-insensitively<br/>This is used to determine how to parse the data.
 - A `DATA_LENGTH` marker, followed by the length of the data (in bytes)
 - A `DATA_LAST` marker, followed by `true` or `false`, indicating if this is the last chunk, or if we should read more.<br/>-> Parsers should error if this is false despite being the last chunk
 - A `DATA_BEGIN` marker, followed by the data
+
+**All** header fields must end with `END_HEADER_FIELD`, excluding `DATA_BEGIN`.
 
 ### Parsing Headers
 
@@ -45,3 +47,21 @@ Here's a list of Header Markers and their corresponding unicode characters:
 | `DATA_BEGIN` | `` | [U+0006](https://unicode-table.com/en/0006/) |
 | `FORMAT_VERSION_BEGIN` | `` | [U+0008](https://unicode-table.com/en/0008/) |
 | `FORMAT_VERSION_END` | | [U+0009](https://unicode-table.com/en/0009/) |
+
+### JSON Table
+
+Here's a JSON table containing the above markers:
+
+```json
+{
+  "HEADER_BEGIN": "\u0001",
+  "DATA_NAME": "\u0003",
+  "DATA_TYPE": "\u0004",
+  "END_HEADER_FIELD": "\u0007",
+  "DATA_LENGTH": "\u0005",
+  "DATA_LAST": "\u000B",
+  "DATA_BEGIN": "\u0006",
+  "FORMAT_VERSION_BEGIN": "\u0008",
+  "FORMAT_VERSION_END": "\u0009"
+};
+```
