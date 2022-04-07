@@ -20,7 +20,7 @@ Just the integer, ie `1`
 
 The float encoded in the format `int.int` (ie `1.0`), **not** the German `1,0`
 
-### nil, null, undefined
+### `nil`, `null`, `undefined`
 
 All 3 should return the language's equivalent of `null` when parsing, and an empty string for the value when encoding.
 
@@ -54,6 +54,10 @@ This datatype should be encoded as `X.Y.Z`, where `.` is [U+0006](https://unicod
 This datatype should be encoded as `pX,pY,pZ/lvX,lvY,lvZ`, where `lvX/lvY/lvZ` are `CFrame`.`LookVector`.`X/Y/Z` respectively, and `pX/pY/pZ` are `CFrame`.`Position`.`X/Y/Z` respectively.
 
 [Example](https://github.com/Conglomeration/Lua/blob/11496b17611c3fc40678020ab8429f16e120cec6/src/CFrameSerializer.lua) of parsing/serializing a CFrame.
+
+### `table`
+
+A Conglomeration (inside of a Conglomeration)
 
 ## Optional
 
